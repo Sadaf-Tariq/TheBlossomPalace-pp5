@@ -1,0 +1,178 @@
+html {
+    height: 100%;
+}
+
+
+body {
+    background: url('/media/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: 'Ubuntu';
+   /* animation-name: hero-image-animation;
+    animation-duration: 10s; */
+}
+
+@keyframes hero-image-animation {
+    40%{
+     transform : scale(1.1);
+    }
+    80%{
+     transform : scale(1);
+    }
+}
+
+
+.image-banner{
+    width: 90%;
+    height: 200px;
+    background-color: rgba(229, 143, 109, 0.4);
+    position : absolute;
+    bottom: 30px;
+    font-family: 'Dancing Script' , sans-serif;
+    color: white;
+ }
+
+ .h1-font{
+    font-size: 500%;
+ }
+
+#logo {
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 100%;
+    font-weight: 500;
+}
+
+
+.logo-text{
+    color: #0e1111;
+}
+
+.nav-color{
+    background-color: rgba(229, 143, 109, 0.4);
+}
+.badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+  }
+  
+  .label-warning[href],
+  .badge-warning[href] {
+    background-color: #c67605;
+  }
+  
+  #lblCartCount {
+      font-size: 12px;
+      background: #ff0000;
+      color: #fff;
+      padding: 0 5px;
+      vertical-align: top;
+      margin-left: -10px; 
+  }
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.shop-now-button {
+    background: #0e1111;
+    color: white;
+    min-width: 150px;
+    font-family: 'Ubuntu';
+}
+
+.btn-black {
+    background: #0e1111;
+    color: white;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #414a4c;
+    color: white;
+}
+
+.text-black {
+    color: #0e1111 !important;
+}
+
+.border-black {
+    border: 1px solid #0e1111!important;
+}
+
+.bg-black{
+    background-color:  rgba(229, 143, 109, 0.4);
+}
+
+ul.list-inline.list-unstyled.text-center.text-lg-right.my-0 li.list-inline-item {
+    margin-right: -20px; 
+}
+.navbar-toggler .navbar-toggler-icon {
+    color: white; /* Change to the color you desire */
+}
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+
+    .image-banner{
+        font-size: 50%; 
+     }
+}
+
+@media (max-width: 995px) {
+    .h1-font{
+        font-size: 200%;
+     }
+}
+
+@media (max-width: 700px) {
+    .h1-font{
+        font-size: 190%;
+     }
+}
+
+@media (max-width: 500px) {
+    .h1-font{
+        font-size: 150%;
+     }
+}
