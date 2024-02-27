@@ -192,3 +192,13 @@ ul.list-inline.list-unstyled.text-center.text-lg-right.my-0 li.list-inline-item 
         font-size: 150%;
      }
 }
+
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}
