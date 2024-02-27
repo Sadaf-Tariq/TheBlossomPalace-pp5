@@ -50,7 +50,7 @@ class Product(models.Model):
         return self.name
 
     def average_rating(self) -> float:
-        return Rating.objects.filter(product_id=self).aggregate(Avg("rating"))["rating__avg"] or 0
+        return Rating.objects.filter(product_rating_id=self).aggregate(Avg("rating"))["rating__avg"] or 0
 
 
 class Rating(models.Model):

@@ -61,6 +61,11 @@ body {
       margin-left: -10px; 
   }
 
+  .product-name {
+    font-family: 'Dancing Script', sans-serif;
+    color: black;
+    font-weight: bolder;
+  }
 /* from Bulma */
 .icon {
     align-items: center;
