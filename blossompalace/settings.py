@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-sadaftariq-theblossompa-quamqy6usa6.ws-eu108.gitpod.io',]
+ALLOWED_HOSTS = ['8000-sadaftariq-theblossompa-quamqy6usa6.ws-eu108.gitpod.io','theblossompalace-a9bac6e32f8a.herokuapp.com']
 
 
 # Application definition
