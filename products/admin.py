@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Type, FlowerCount, Product, Rating
 
-lass ProductAdmin(admin.ModelAdmin):
+class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'sku',
         'name',
