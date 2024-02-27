@@ -9,19 +9,7 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Ubuntu';
-   /* animation-name: hero-image-animation;
-    animation-duration: 10s; */
 }
-
-@keyframes hero-image-animation {
-    40%{
-     transform : scale(1.1);
-    }
-    80%{
-     transform : scale(1);
-    }
-}
-
 
 .image-banner{
     width: 90%;
@@ -49,7 +37,7 @@ body {
 }
 
 .nav-color{
-    background-color: rgba(229, 143, 109, 0.4);
+    background-color: rgba(229, 143, 109, 1);
 }
 .badge {
     padding-left: 9px;
@@ -121,7 +109,7 @@ body {
 }
 
 .bg-black{
-    background-color:  rgba(229, 143, 109, 0.4);
+    background-color:  rgba(229, 143, 109, 1);
 }
 
 ul.list-inline.list-unstyled.text-center.text-lg-right.my-0 li.list-inline-item {
@@ -131,6 +119,29 @@ ul.list-inline.list-unstyled.text-center.text-lg-right.my-0 li.list-inline-item 
     color: white; /* Change to the color you desire */
 }
 
+.image-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+.image-container img {
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.img-style{
+    width: 100%; 
+    height: 400px;
+    object-fit: cover;
+}
+
+.margin-top {
+    margin-top: 90px;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
