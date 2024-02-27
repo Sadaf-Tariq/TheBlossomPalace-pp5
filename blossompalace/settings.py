@@ -54,7 +54,7 @@ INSTALLED_APPS = [
     'products',
 ]
 
-#AUTH_USER_MODEL = 'users.CustomUser'
+AUTH_USER_MODEL = 'users.CustomUser'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -125,6 +125,7 @@ WSGI_APPLICATION = 'blossompalace.wsgi.application'
 DATABASES = {
    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
+
 
 
 
