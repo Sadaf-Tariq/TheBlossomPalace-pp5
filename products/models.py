@@ -7,6 +7,10 @@ from django.db.models import Avg
 
 
 class Type(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Flower_Types'
+
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
