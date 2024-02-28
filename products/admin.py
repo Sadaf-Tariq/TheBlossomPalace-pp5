@@ -7,7 +7,6 @@ class ProductAdmin(admin.ModelAdmin):
         'name',
         'flower_type',
         'price',
-        'rating',
         'featured_image',
         'flower_count',
     )
