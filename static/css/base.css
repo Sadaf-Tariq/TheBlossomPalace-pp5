@@ -161,6 +161,11 @@ ul.list-inline.list-unstyled.text-center.text-lg-right.my-0 li.list-inline-item 
 .checked {
     color: orange;
 }
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
