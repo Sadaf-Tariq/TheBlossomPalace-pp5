@@ -43,11 +43,11 @@
                                             <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                                             {% if product.average_rating %}
                                             <small class="card-text fontM text-left">
-                                                <small class="fas fa-star {% if product.average_rating > 0 %} checked {% endif %}"> </small>
-                                                <small class="fas fa-star {% if product.average_rating > 1 %} checked {% endif %}"></small>
-                                                <small class="fas fa-star {% if product.average_rating > 2 %} checked {% endif %}"></small>
-                                                <small class="fas fa-star {% if product.average_rating > 3 %} checked {% endif %}" ></small>
-                                                <small class="fas fa-star {% if product.average_rating > 4 %} checked {% endif %}"></small> {{ product.average_rating|floatformat:1 }} / 5.0 </small>
+                                                <small class="fas fa-star {% if product.average_rating > 0 %} checked {% endif %}"></small>
+                                                <small class="fas fa-star {% if product.average_rating > 1.5 %} checked {% endif %}"></small>
+                                                <small class="fas fa-star {% if product.average_rating > 2.5 %} checked {% endif %}"></small>
+                                                <small class="fas fa-star {% if product.average_rating > 3.5 %} checked {% endif %}" ></small>
+                                                <small class="fas fa-star {% if product.average_rating > 4.5 %} checked {% endif %}"></small> {{ product.average_rating|floatformat:1 }} / 5.0 </small>
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}

@@ -19,8 +19,14 @@ class CategoryAdmin(admin.ModelAdmin):
         'name',
     )
 
+class RatingAdmin(admin.ModelAdmin):
+    list_display = (
+        'product_rating',
+        'rating',
+    )
+
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(FlowerCount)
-admin.site.register(Rating)
+admin.site.register(Rating, RatingAdmin)

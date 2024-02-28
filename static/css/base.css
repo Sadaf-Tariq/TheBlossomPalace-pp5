@@ -157,6 +157,10 @@ ul.list-inline.list-unstyled.text-center.text-lg-right.my-0 li.list-inline-item 
 	background: white;
 	z-index: -1;
 }
+
+.checked {
+    color: orange;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
