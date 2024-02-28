@@ -6,10 +6,10 @@ from django.core.validators import MaxValueValidator
 from django.db.models import Avg
 
 
-class Type(models.Model):
+class Category(models.Model):
 
     class Meta:
-        verbose_name_plural = 'Flower_Types'
+        verbose_name_plural = 'Categories'
 
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
@@ -27,8 +27,7 @@ class FlowerCount(models.Model):
         return self.name
 
 def field_validation(value):
-    """
-    Function to validatate rating"""
+    """Function to validatate rating"""
 
     if value == 0:
         raise ValidationError(
@@ -38,7 +37,7 @@ def field_validation(value):
 
 class Product(models.Model):
     name = models.CharField(max_length=254)
-    flower_type = models.ForeignKey('Type', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     featured_image = CloudinaryField('image', default='placeholder')
     description = models.TextField()
     flower_count = models.ForeignKey(

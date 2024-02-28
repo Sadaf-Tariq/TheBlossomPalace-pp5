@@ -1,11 +1,11 @@
 from django.contrib import admin
-from .models import Type, FlowerCount, Product, Rating
+from .models import Category, FlowerCount, Product, Rating
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'sku',
         'name',
-        'flower_type',
+        'category',
         'price',
         'featured_image',
         'flower_count',
@@ -13,7 +13,7 @@ class ProductAdmin(admin.ModelAdmin):
 
     ordering = ('sku',)
 
-class TypeAdmin(admin.ModelAdmin):
+class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'friendly_name',
         'name',
@@ -21,6 +21,6 @@ class TypeAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Product, ProductAdmin)
-admin.site.register(Type, TypeAdmin)
+admin.site.register(Category, CategoryAdmin)
 admin.site.register(FlowerCount)
 admin.site.register(Rating)
