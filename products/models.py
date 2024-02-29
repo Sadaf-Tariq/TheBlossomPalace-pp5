@@ -21,10 +21,10 @@ class Category(models.Model):
         return self.friendly_name
 
 class FlowerCount(models.Model):
-    name = models.CharField(max_length=20, unique=True)
+    name = models.DecimalField(max_digits=5, decimal_places=0)
 
     def __str__(self):
-        return self.name
+        return str(self.name)
 
 def field_validation(value):
     """Function to validatate rating"""
@@ -42,6 +42,7 @@ class Product(models.Model):
     description = models.TextField()
     flower_count = models.ForeignKey(
         'FlowerCount', on_delete=models.PROTECT, related_name='count')
+    has_flower_count = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     sku = models.CharField(max_length=254, null=True, blank=True)
 

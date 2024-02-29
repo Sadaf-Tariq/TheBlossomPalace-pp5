@@ -15,6 +15,9 @@ def all_products(request):
     categories = None
     sort = None
     direction = None
+    a=2
+    b=3
+    c=4
 
     if request.GET:
         if 'sort' in request.GET:
@@ -55,6 +58,9 @@ def all_products(request):
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
+        'a': a,
+        'b':b,
+        'c':c,
     }
 
     return render(request, 'products/products.html', context)
@@ -64,9 +70,15 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    a=2
+    b=3
+    c=4
 
     context = {
         'product': product,
+        'a': a,
+        'b':b,
+        'c':c,
     }
 
     return render(request, 'products/product_detail.html', context)
